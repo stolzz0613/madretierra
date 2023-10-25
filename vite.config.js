@@ -5,4 +5,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/madretierra/',
+  server: {
+    historyApiFallback: {
+      disableDotRule: true,
+      rewrites: [
+        { from: /^\/madretierra/, to: '/madretierra/index.html' },
+      ],
+    },
+  },
 })
