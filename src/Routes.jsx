@@ -9,16 +9,16 @@ function App() {
       <SocialBar />
       <NavBar />
       <Routes>
-        <Route path="madretierra/" element={<Home />} />
-        <Route path="madretierra/property" element={<RedirectToHome />} />
-        <Route path="madretierra/property/:id" element={<Property />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/property" element={<RedirectToHome />} />
+        <Route path="/property/:id" element={<Property />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
 function RedirectToHome() {
-    return <Navigate to="madretierra/" replace />;
+    return <Navigate to="/" replace />;
 }
 
 export default App;
