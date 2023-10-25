@@ -12,7 +12,7 @@ function NavBar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <div onClick={() => navigate('/')} className="-m-1.5 p-1.5 cursor-pointer">
+          <div onClick={() => navigate('madretierra/')} className="-m-1.5 p-1.5 cursor-pointer">
             <span className="sr-only">Your Company</span>
             <img
               className="h-30 w-auto"
