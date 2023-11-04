@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Home.css'
-import { Hero, Highlights, Promo, Details, Results, Map } from '../components'
+import { Hero, Highlights, Promo, Details, Results } from '../components'
 import { useGlobalState } from '../context/GlobalContext'
 
 function Home() {
@@ -24,7 +24,6 @@ function Home() {
   return (
     <>
       <Hero />
-      <Map />
       <div className="m-0 md:m-16">
         {isLoading ? (
           <div className="loading-indicator">

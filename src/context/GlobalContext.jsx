@@ -10,12 +10,32 @@ const initialState = {
 
 const GlobalStateContext = createContext();
 
+function ordenarPorPrecio(propiedades) {
+  propiedades.sort((propiedadA, propiedadB) => {
+      return propiedadA.obtenerPrecio[0].GET_PROPIEDADES.precio - propiedadB.obtenerPrecio[0].GET_PROPIEDADES.precio;
+  });
+
+  return propiedades;
+}
+
+function ordenarPorPrecioASC(propiedades) {
+  propiedades.sort((propiedadA, propiedadB) => {
+      return propiedadB.obtenerPrecio[0].GET_PROPIEDADES.precio - propiedadA.obtenerPrecio[0].GET_PROPIEDADES.precio;
+  });
+
+  return propiedades;
+}
+
 const reducer = (state, action) => {
   switch (action.type) {
     case 'SET_PROPERTIES':
       return { ...state, properties: action.payload?.filter(n => n?.obtenerPrecio !== null ) };
     case 'SET_FILTERING':
       return { ...state, isFiltering: action.payload }
+    case 'DESC_ORDER':
+      return { ...state, properties: ordenarPorPrecio(state.properties) };
+    case 'ASC_ORDER':
+      return { ...state, properties: ordenarPorPrecioASC(state.properties) };
     default:
       return state;
   }

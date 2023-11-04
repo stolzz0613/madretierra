@@ -15,7 +15,6 @@ import {
   faRulerCombined,
   faWarehouse,
 } from '@fortawesome/free-solid-svg-icons'
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import Whatsapp from '../components/Whatsapp'
 
 function Property() {

@@ -1,0 +1,4 @@
+.active {
+    color:  rgb(63 98 18 / var(--tw-text-opacity));
+    font-size: 40px;
+}

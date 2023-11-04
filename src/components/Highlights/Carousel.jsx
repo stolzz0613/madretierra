@@ -39,8 +39,6 @@ function Carousel() {
         },
       }}
       navigation
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
     >
       {properties?.length > 0 &&
         properties.map((p, idx) => (

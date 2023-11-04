@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
+import "./componentStyles.css"
 
 function NavBar() {
   const navigate = useNavigate()
@@ -45,18 +46,18 @@ function NavBar() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <NavLink to="filtered/Venta" className="cursor-pointer text-sm font-semibold leading-6 text-gray-900" >
             VENTA
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          </NavLink>
+          <NavLink to="filtered/Alquiler" className="cursor-pointer text-sm font-semibold leading-6 text-gray-900" >
             RENTA
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          </NavLink>
+          <NavLink to="/nosotros" className="text-sm font-semibold leading-6 text-gray-900" >
             SOBRE NOSOTROS
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          </NavLink>
+          <NavLink to="/" className="text-sm font-semibold leading-6 text-gray-900" >
             CONTACTENOS
-          </a>
+          </NavLink>
         </div>
       </nav>
       {
