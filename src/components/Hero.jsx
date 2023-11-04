@@ -84,7 +84,6 @@ function Hero() {
   }, [data])
 
   useEffect(() => {
-      refetch()
       dispatch({ type: 'SET_PROPERTIES', payload: data?.allPropiedades?.nodes })
       dispatch({ type: 'SET_FILTERING', payload: false })
   }, [])
