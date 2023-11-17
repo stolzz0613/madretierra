@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 function Details() {
   return (
@@ -19,7 +19,7 @@ function Details() {
           </div>
           <div className="col-span-2 p-1 text-left">
             <FontAwesomeIcon
-              icon={faPhone}
+              icon={faLocationDot}
               color="#38653A"
               style={{ marginRight: '5px' }}
             />
@@ -35,16 +35,19 @@ function Details() {
           </div>
           <div className="col-span-2 p-1 text-left">
             <FontAwesomeIcon
-              icon={faPhone}
+              icon={faEnvelope}
               color="#38653A"
               style={{ marginRight: '5px' }}
             />
             Contacto@madretierra.com
           </div>
           <div className="col-span-3 text-center mt-4 justify-self-center">
-            <button className="bg-lime-600 p-2 font-light text-white mt-5 px-4">
+            <a
+              href='https://wa.me/573103715943'
+              className="bg-lime-600 p-2 font-light text-white mt-5 px-4"
+            >
               Contacta con Nosotros
-            </button>
+            </a>
           </div>
         </div>
       </div>

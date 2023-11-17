@@ -17,7 +17,7 @@ function NavBar() {
             <span className="sr-only">Your Company</span>
             <img
               className="h-30 w-auto"
-              src="http://madre-tierra-back.local/wp-content/uploads/2023/09/3e7a5dfa-8e23-43ac-85ee-be13d4b3a0a6-1.png"
+              src="https://darkcyan-caterpillar-298159.hostingersite.com/wp-content/uploads/2023/09/3e7a5dfa-8e23-43ac-85ee-be13d4b3a0a6-1.png"
               alt=""
             ></img>
           </div>
@@ -55,7 +55,7 @@ function NavBar() {
           <NavLink to="/nosotros" className="text-sm font-semibold leading-6 text-gray-900" >
             SOBRE NOSOTROS
           </NavLink>
-          <NavLink to="/" className="text-sm font-semibold leading-6 text-gray-900" >
+          <NavLink to="/contactus" className="text-sm font-semibold leading-6 text-gray-900" >
             CONTACTENOS
           </NavLink>
         </div>

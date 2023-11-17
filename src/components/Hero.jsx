@@ -95,18 +95,20 @@ function Hero() {
           className="grid py-12 my-0 md:my-12 sm:py-0 justify-center items-center bg-blend-multiply bg-no-repeat lg:grid-cols-2"
           style={{
             background:
-              'url(http://madre-tierra-back.local/wp-content/uploads/2023/09/Foto-inicio.png) #246A388C',
+              'url(https://darkcyan-caterpillar-298159.hostingersite.com/wp-content/uploads/2023/09/Foto-inicio.png) #246A388C',
             minHeight: '700px',
             backgroundSize: 'cover',
           }}
         >
           <div className="justify-self-center hidden lg:block">
-            <h1 className="text-4xl font-bold tracking-tight text-white max-w-lg">
+            <h1 className="text-4xl font-bold tracking-tight mb-12 text-white max-w-lg">
               Encuentra la casa de tus sueños hoy
             </h1>
-            <button className="bg-lime-600 p-2 font-light text-white mt-10">
+            <a
+              href='https://wa.me/573103715943'
+              className="bg-lime-600 p-2 font-light text-white">
               Envianos un mensaje
-            </button>
+            </a>
           </div>
           <div className="bg-white m-0 md:m-12 lg:w-4/5 justify-self-center py-2 grid lg:py-16">
             <h1 className="text-2xl mx-3 md:mx-0 font-light tracking-tight text-lime-800 md:text-3xl">

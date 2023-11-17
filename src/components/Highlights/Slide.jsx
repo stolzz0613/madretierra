@@ -46,8 +46,8 @@ function Slide({ property }) {
         </div>
       </div>
       <div className="bg-lime-700 bg-opacity-25 text-center items-center flex justify-between px-6 py-4">
-        <p className="text-xl text-green-800 font-semibold">Precio:</p>
-        <p className="text-xl text-green-800 font-semibold">
+        <p className="text-l text-green-800 font-semibold">Precio:</p>
+        <p className="text-l text-green-800 font-semibold">
           {USDollar.format(prop?.precio)}
         </p>
       </div>

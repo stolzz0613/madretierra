@@ -4,7 +4,7 @@ function Promo() {
       className="rounded-lg bg-blend-multiply bg-no-repeat bg-cover m-5 lg:mt-7 h-34 lg:h-96"
       style={{
         background:
-          'url(http://madre-tierra-back.local/wp-content/uploads/2023/09/image-1.png) rgba(57, 57, 57, 0.53)',
+          'url(https://darkcyan-caterpillar-298159.hostingersite.com/wp-content/uploads/2023/09/image-1.png) rgba(57, 57, 57, 0.53)',
         backgroundSize: 'cover'
       }}
     >
