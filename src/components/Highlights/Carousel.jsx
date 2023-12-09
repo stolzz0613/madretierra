@@ -18,7 +18,7 @@ function Carousel() {
 
   const { state } = useGlobalState();
   const { properties } = state;
-  console.log(properties[0]?.obtenerPrecio?.[0]?.GET_PROPIEDADES)
+
   return (
     <Swiper
       modules={[Pagination, Navigation]}

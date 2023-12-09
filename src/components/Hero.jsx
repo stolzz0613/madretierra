@@ -11,7 +11,7 @@ const filtersData = [
     options: ['', 'Norte', 'Sur', 'Centro', 'Occidente', 'Oriente'],
   },
   {
-    alternative: 'Estado',
+    alternative: 'estado',
     name: 'Estado de la propiedad',
     options: ['', 'Nuevo', 'Usado', 'Proyecto', 'En Construccion'],
   },

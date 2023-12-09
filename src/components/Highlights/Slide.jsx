@@ -19,7 +19,7 @@ function Slide({ property }) {
     <div
       className="grid grid-cols-1 w-300 bg-white border border-gray-300 shadow-lg rounded-xl overflow-hidden shadow-sm cursor-pointer"
       style={{ height: '500px' }}
-      onClick={() => navigate(`property/${property?.id}`)}
+      onClick={() => navigate(`/property/${property?.id}`)}
     >
       <h2
         className="text-sm font-semibold px-4 py-2 mt-5"
