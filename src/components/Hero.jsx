@@ -119,11 +119,11 @@ function Hero() {
             </h1>
             <a
               href='https://wa.me/573103715943'
-              className="bg-lime-600 p-2 font-light text-white">
+              className="bg-lime-600 p-2 font-light text-white rounded-md">
               Envianos un mensaje
             </a>
           </div>
-          <div className="bg-white m-0 md:m-12 lg:w-4/5 justify-self-center py-2 grid lg:py-16">
+          <div className="bg-white m-0 md:m-12 lg:w-4/5 justify-self-center rounded-md py-2 grid lg:py-16">
             <h1 className="text-2xl mx-3 md:mx-0 font-light tracking-tight text-lime-800 md:text-3xl">
               Encuentra tu inmueble ideal
             </h1>
@@ -165,13 +165,13 @@ function Hero() {
               className='flex text-right justify-center mt-12 p-4 gap-4 md:justify-end'
             >
               <button
-                className="bg-lime-600 p-2 font-light text-white align-self-right w-40"
+                className="bg-lime-600 p-2 font-light text-white rounded-md align-self-right w-40"
                 onClick={() => handleFilter()}
               >
                 Buscar
               </button>
               <button
-                className="bg-lime-600 p-2 font-light text-white align-self-right w-40"
+                className="bg-lime-600 p-2 font-light text-white rounded-md align-self-right w-40"
                 onClick={() => onReset()}
               >
                 Reiniciar
