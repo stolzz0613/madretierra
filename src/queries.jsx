@@ -8,6 +8,8 @@ export const GET_PROPERTIES = gql`
     $tipo: String = ""
     $precioMin: Float = 0
     $precioMax: Float = 9999999999999
+    $banos: Int = 0
+    $habitaciones: Int = 0
   ) {
     allPropiedades {
       nodes {
@@ -16,8 +18,10 @@ export const GET_PROPERTIES = gql`
           ciudad: $ciudad,
           nombre: $nombre,
           tipo: $tipo,
-          precioMin: $precioMin
-          precioMax: $precioMax
+          precioMin: $precioMin,
+          precioMax: $precioMax,
+          banos: $banos,
+          habitaciones: $habitaciones
         ) {
           GET_PROPIEDADES {
             ciudad
@@ -25,6 +29,7 @@ export const GET_PROPERTIES = gql`
             para
             precio
             tipo
+            destacado
             image {
               sourceUrl
             }

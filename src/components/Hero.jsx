@@ -51,8 +51,8 @@ const filtersData = [
     name: 'Tipo de Negocio',
     options: ['', 'Venta', 'Alquiler'],
   },
-  { name: 'Habitaciones', options: ['', '1', '2', '3 o mas'] },
-  { name: 'Baños', options: ['', '1', '2', '3 o mas'] },
+  { name: 'Habitaciones', alternative: 'habitaciones', options: ['', '1', '2', '3 o mas'] },
+  { name: 'Baños', alternative: 'banos', options: ['', '1', '2', '3 o mas'] },
 ]
 
 function Hero() {
@@ -62,6 +62,16 @@ function Hero() {
   const { data, refetch } = useQuery(GET_PROPERTIES, {
     variables: {
       ...filters,
+      habitaciones: filters?.habitaciones === '3 o mas'
+        ? 3
+        : filters?.habitaciones === ''
+          ? 0
+          : filters.habitaciones,
+      banos: filters.banos === '3 o mas'
+        ? 3
+        : filters.banos === ''
+          ? 0
+          : filters.banos,
     },
   })
 
@@ -92,7 +102,7 @@ function Hero() {
     <div className="bg-white">
       <div className="relative isolate">
         <div
-          className="grid py-12 my-0 md:my-12 sm:py-0 justify-center items-center bg-blend-multiply bg-no-repeat lg:grid-cols-2"
+          className="grid justify-center items-center bg-blend-multiply bg-no-repeat lg:grid-cols-2"
           style={{
             background:
               'url(https://darkcyan-caterpillar-298159.hostingersite.com/wp-content/uploads/2023/09/Foto-inicio.png) #246A388C',
@@ -101,8 +111,11 @@ function Hero() {
           }}
         >
           <div className="justify-self-center hidden lg:block">
-            <h1 className="text-4xl font-bold tracking-tight mb-12 text-white max-w-lg">
-              Encuentra la casa de tus sueños hoy
+            <h1 className="text-5xl tracking-wider text-white max-w-lg">
+              Encuentra la casa de
+            </h1>
+            <h1 className="text-5xl tracking-wider mb-12 text-white max-w-lg">
+              tus sueños hoy
             </h1>
             <a
               href='https://wa.me/573103715943'

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function SocialBar() {
   return (
-    <div className="hidden md:flex border-b-solid border-b-2 border-zinc-200 flex justify-end items-center gap-3 text-lime-800 text-sm px-10 py-5 shadow-lg">
+    <div className="hidden md:flex border-b-solid border-b-2 border-zinc-200 flex justify-end items-center gap-3 text-lime-800 text-sm px-16 py-5 shadow-lg">
       <p>Contacto@madretierra.com</p>
       <p>
         310 371 5943

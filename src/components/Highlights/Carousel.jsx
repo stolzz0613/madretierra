@@ -18,7 +18,7 @@ function Carousel() {
 
   const { state } = useGlobalState();
   const { properties } = state;
-
+  console.log(properties[0]?.obtenerPrecio?.[0]?.GET_PROPIEDADES)
   return (
     <Swiper
       modules={[Pagination, Navigation]}
@@ -41,7 +41,9 @@ function Carousel() {
       navigation
     >
       {properties?.length > 0 &&
-        properties.map((p, idx) => (
+        properties
+          .filter(p => p?.obtenerPrecio?.[0]?.GET_PROPIEDADES?.destacado)
+          .map((p, idx) => (
           <SwiperSlide key={idx}>
             <Slide property={p} />
           </SwiperSlide>
