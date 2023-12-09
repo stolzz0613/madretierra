@@ -5,8 +5,13 @@ import { GET_PROPERTIES } from '../queries'
 import { useGlobalState } from '../context/GlobalContext'
 
 const filtersData = [
-  { name: 'Pais', options: ['', 'Colombia', 'Mexico', 'Estados Unidos'] },
   {
+    alternative: 'pais',
+    name: 'Pais',
+    options: ['', 'Colombia', 'Mexico', 'Estados Unidos']
+  },
+  {
+    alternative: 'zona',
     name: 'Zona',
     options: ['', 'Norte', 'Sur', 'Centro', 'Occidente', 'Oriente'],
   },
