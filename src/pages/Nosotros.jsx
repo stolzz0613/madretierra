@@ -5,7 +5,7 @@ function Nosotros() {
         className="flex items-center text-center font-extralight text-white px-40 text-3xl bg-blend-multiply bg-no-repeat lg:grid-cols-2"
         style={{
           background:
-            'url(http://madre-tierra-back.local/wp-content/uploads/2023/10/image-2.png) #246A38',
+            'url(https://darkcyan-caterpillar-298159.hostingersite.com/wp-content/uploads/2023/12/image-2.png) rgb(200, 250, 164)',
           minHeight: '630px',
           backgroundSize: 'cover',
           backgroundBlendMode: 'multiply',
@@ -84,7 +84,7 @@ function Nosotros() {
           </p>
         </div>
         <div>
-            <img src="http://madre-tierra-back.local/wp-content/uploads/2023/10/Captura-de-Pantalla-2023-09-12-a-las-3.50.01-p.m-1.png" />
+            <img src="https://darkcyan-caterpillar-298159.hostingersite.com/wp-content/uploads/2023/12/Captura-de-Pantalla-2023-09-12-a-las-3.50.01-p.m-1.png" />
         </div>
       </div>
     </div>
