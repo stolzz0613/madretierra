@@ -12,7 +12,7 @@ function Promo() {
         <h1 className="text-2xl lg:text-6xl font-light tracking-tight text-white text-left sm:text-6xl">
             ¿Buscas vender o arrendar tu inmueble?
         </h1>
-        <button className="bg-lime-600 p-2 font-light text-white mt-2 lg:mt-10 w-44">
+        <button className="bg-lime-600 p-2 font-light text-white mt-2 lg:mt-10 w-44 rounded-lg">
             Ofertar
         </button>
       </div>

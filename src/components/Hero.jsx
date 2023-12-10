@@ -143,45 +143,42 @@ function Hero() {
                   filters={filters}
                 />
               ))}
-              <div className="flex items-center flex-col gap-4 md:flex-row flex-wrap xl:flex-nowrap">
-                <div className="relative text-left">
+              <div className="flex items-center gap-1">
+                <div className="text-left">
                   <label>Precio desde:</label>
                   <input
                     type="number"
                     placeholder="Precio mínimo"
-                    className="block w-30 md:w-50 px-4 py-2 rounded-lg border border-gray-300 focus:ring focus:ring-indigo-300 focus:outline-none"
+                    className="p-1 rounded-lg border border-gray-300 focus:ring focus:ring-indigo-300 focus:outline-none"
                     onChange={e => setFilters(prev => ({...prev, 'precioMin': parseFloat(e.target.value)}))}
                     value={filters?.['precioMin'] || ''}
                   />
                 </div>
-                <div className="relative text-left">
+                <div className="text-left">
                   <label>Precio hasta:</label>
                   <input
                     type="number"
                     placeholder="Precio máximo"
-                    className="block w-30 md:w-50 px-4 py-2 rounded-lg border border-gray-300 focus:ring focus:ring-indigo-300 focus:outline-none"
+                    className="p-1 rounded-lg border border-gray-300 focus:ring focus:ring-indigo-300 focus:outline-none"
                     onChange={e => setFilters(prev => ({...prev, 'precioMax': parseFloat(e.target.value)}))}
                     value={filters?.['precioMax'] || ''}
                   />
                 </div>
+                <button
+                  className="ms-4 px-2 py-1 bg-lime-600 font-light text-white rounded-md self-end"
+                  onClick={() => handleFilter()}
+                  style={{ marginBottom: '2px' }}
+                >
+                  Buscar
+                </button>
               </div>
             </div>
-            <div
-              className='flex text-right justify-center mt-12 p-4 gap-4 md:justify-end'
-            >
-              <button
-                className="bg-lime-600 p-2 font-light text-white rounded-md align-self-right w-40"
-                onClick={() => handleFilter()}
-              >
-                Buscar
-              </button>
-              <button
+              {/* <button
                 className="bg-lime-600 p-2 font-light text-white rounded-md align-self-right w-40"
                 onClick={() => onReset()}
               >
                 Reiniciar
-              </button>
-            </div>
+              </button> */}
           </div>
         </div>
       </div>
