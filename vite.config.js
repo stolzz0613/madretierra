@@ -8,7 +8,7 @@ export default defineConfig({
     historyApiFallback: {
       disableDotRule: true,
       rewrites: [
-        { from: /^\/madretierra/, to: '/madretierra/index.html' },
+        { from: /^\/madretierra/, to: '/madretierra/index.html' }
       ],
     },
   },

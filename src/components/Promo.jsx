@@ -1,4 +1,9 @@
+import { useState } from "react";
+import Modal from "./Modal";
+
 function Promo() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div
       className="rounded-lg bg-blend-multiply bg-no-repeat bg-cover m-5 lg:mt-7 h-34 lg:h-96"
@@ -12,10 +17,14 @@ function Promo() {
         <h1 className="text-2xl lg:text-6xl font-light tracking-tight text-white text-left sm:text-6xl">
             ¿Buscas vender o arrendar tu inmueble?
         </h1>
-        <button className="bg-lime-600 p-2 font-light text-white mt-2 lg:mt-10 w-44 rounded-lg">
+        <button
+          className="bg-lime-600 p-2 font-light text-white mt-2 lg:mt-10 w-44 rounded-lg"
+          onClick={() => setIsOpen(true)}
+        >
             Ofertar
         </button>
       </div>
+      <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   )
 }

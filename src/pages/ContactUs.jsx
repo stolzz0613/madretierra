@@ -139,7 +139,7 @@ function ContactUs() {
             <div className="text-left">
               <button
                 type="submit"
-                className="mt-8 bg-lime-600 p-2 px-12 font-light text-white"
+                className="rounded-lg mt-8 bg-lime-600 p-2 px-12 font-light text-white"
               >
                 Enviar Formulario
               </button>

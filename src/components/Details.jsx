@@ -1,7 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
+import Modal from './Modal'
+import { useState } from 'react';
 
 function Details() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="w-100 grid grid-cols-1 m-5 lg:mt-14">
       <h1 className="text-lime-800 text-xl lg:text-4xl tracking-tight mb-4 ">
@@ -49,6 +53,7 @@ function Details() {
               Contacta con Nosotros
             </a>
           </div>
+          <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       </div>
     </div>
