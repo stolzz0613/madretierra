@@ -143,42 +143,44 @@ function Hero() {
                   filters={filters}
                 />
               ))}
-              <div className="flex justify-between gap-3">
-                <div className="text-left">
+
+              <div className="flex flex-col justify-start text-left">
                   <label>Precio desde:</label>
                   <input
                     type="number"
                     placeholder="Precio mínimo"
-                    className="p-1 rounded-lg border border-gray-300 focus:ring focus:ring-indigo-300 focus:outline-none"
+                    className="px-2 py-1 rounded-lg border border-gray-300 focus:ring focus:ring-indigo-300 focus:outline-none"
                     onChange={e => setFilters(prev => ({...prev, 'precioMin': parseFloat(e.target.value)}))}
                     value={filters?.['precioMin'] || ''}
                   />
                 </div>
-                <div className="text-left">
+                <div className="flex flex-col justify-start text-left">
                   <label>Precio hasta:</label>
                   <input
                     type="number"
                     placeholder="Precio máximo"
-                    className="p-1 rounded-lg border border-gray-300 focus:ring focus:ring-indigo-300 focus:outline-none"
+                    className="px-2 py-1 rounded-lg border border-gray-300 focus:ring focus:ring-indigo-300 focus:outline-none"
                     onChange={e => setFilters(prev => ({...prev, 'precioMax': parseFloat(e.target.value)}))}
                     value={filters?.['precioMax'] || ''}
                   />
                 </div>
-                <button
-                  className="px-2 py-1 bg-lime-600 font-light text-white rounded-md self-end"
-                  onClick={() => handleFilter()}
-                  style={{ marginBottom: '2px' }}
-                >
-                  Buscar
-                </button>
-              </div>
             </div>
+            <div
+              className='flex text-right justify-center mt-4 p-4 gap-4'
+            >
+              <button
+                className="bg-lime-600 p-2 font-light text-white rounded-md w-40"
+                onClick={() => handleFilter()}
+              >
+                Buscar
+              </button>
               {/* <button
                 className="bg-lime-600 p-2 font-light text-white rounded-md align-self-right w-40"
                 onClick={() => onReset()}
               >
                 Reiniciar
               </button> */}
+            </div>
           </div>
         </div>
       </div>
