@@ -143,7 +143,7 @@ function Hero() {
                   filters={filters}
                 />
               ))}
-              <div className="flex items-center gap-1">
+              <div className="flex justify-between gap-3">
                 <div className="text-left">
                   <label>Precio desde:</label>
                   <input
@@ -165,7 +165,7 @@ function Hero() {
                   />
                 </div>
                 <button
-                  className="ms-4 px-2 py-1 bg-lime-600 font-light text-white rounded-md self-end"
+                  className="px-2 py-1 bg-lime-600 font-light text-white rounded-md self-end"
                   onClick={() => handleFilter()}
                   style={{ marginBottom: '2px' }}
                 >
