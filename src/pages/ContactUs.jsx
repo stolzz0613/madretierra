@@ -5,7 +5,8 @@ import {
   faPhone,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { Map } from '../components'
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -48,7 +49,7 @@ function ContactUs() {
 
   return (
     <div className="container mx-auto py-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="p-8 gap-16 grid grid-cols-1 md:grid-cols-2 gap-8 border-solid border-2 border-zinc-200 rounded-lg shadow-xl">
         <div>
           <h2 className="text-left mb-12 font-semibold text-lime-800 text-xl tracking-widest">
             CONTÁCTENOS
@@ -196,6 +197,14 @@ function ContactUs() {
               <FontAwesomeIcon icon={faFacebook} size='2x'/>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="my-16">
+        <h2 className="mb-16 text-center font-semibold text-lime-800 text-xl tracking-widest">
+          ENCUENTRANOS EN DISTINTAS PARTES DEL MUNDO
+        </h2>
+        <div>
+          <Map />
         </div>
       </div>
     </div>
