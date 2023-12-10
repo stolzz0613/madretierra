@@ -9,7 +9,6 @@ import Map, {
   GeolocateControl
 } from 'react-map-gl';
 
-import ControlPanel from './control-panel';
 import Pin from './pin';
 
 import CITIES from './cities.json';
@@ -45,9 +44,9 @@ function MapComponent() {
     <div id='map'>
       <Map
         initialViewState={{
-          latitude: 4.5170,
-          longitude: -75.6830,
-          zoom: 10,
+          latitude: 15.05170,
+          longitude: -90.9830,
+          zoom: 3,
           bearing: 0,
           pitch: 0
         }}
