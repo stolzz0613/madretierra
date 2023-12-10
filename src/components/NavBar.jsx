@@ -46,16 +46,32 @@ function NavBar() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <NavLink to="filtered/Venta" className="cursor-pointer text-sm font-semibold leading-6 text-gray-900" >
+          <NavLink
+            to="filtered/Venta"
+            className="cursor-pointer text-sm font-semibold leading-6 text-gray-900"
+            style={({ isActive }) => ({color: isActive ? "#6AA843" : "black"})}
+          >
             VENTA
           </NavLink>
-          <NavLink to="filtered/Alquiler" className="cursor-pointer text-sm font-semibold leading-6 text-gray-900" >
+          <NavLink
+            to="filtered/Alquiler"
+            className="cursor-pointer text-sm font-semibold leading-6 text-gray-900"
+            style={({ isActive }) => ({color: isActive ? "#6AA843" : "black"})}
+          >
             RENTA
           </NavLink>
-          <NavLink to="/nosotros" className="text-sm font-semibold leading-6 text-gray-900" >
+          <NavLink
+            to="/nosotros"
+            className="text-sm font-semibold leading-6 text-gray-900"
+            style={({ isActive }) => ({color: isActive ? "#6AA843" : "black"})}
+          >
             SOBRE NOSOTROS
           </NavLink>
-          <NavLink to="/contactus" className="text-sm font-semibold leading-6 text-gray-900" >
+          <NavLink
+            to="/contactus"
+            className="text-sm font-semibold leading-6 text-gray-900"
+            style={({ isActive }) => ({color: isActive ? "#6AA843" : "black"})}
+          >
             CONTACTENOS
           </NavLink>
         </div>
