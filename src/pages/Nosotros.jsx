@@ -9,6 +9,7 @@ function Nosotros() {
           minHeight: '630px',
           backgroundSize: 'cover',
           backgroundBlendMode: 'multiply',
+          boxShadow: '0px 10px 0px white inset'
         }}
       >
         <p>
