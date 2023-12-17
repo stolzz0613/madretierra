@@ -48,14 +48,14 @@ function ContactUs() {
   }
 
   return (
-    <div className="container mx-auto py-8">
-      <div className="p-8 gap-16 grid grid-cols-1 md:grid-cols-2 gap-8 border-solid border-2 border-zinc-200 rounded-lg shadow-xl">
-        <div>
-          <h2 className="text-left mb-12 font-semibold text-lime-800 text-xl tracking-widest">
+    <div className="container mx-auto lg:py-8">
+      <div className="p-8 gap-16 grid grid-cols-1 md:grid-cols-2 gap-8 rounded-lg shadow-xl">
+        <div className='border-solid border-2 border-zinc-200 rounded-xl md:border-0 p-8 md:p-0'>
+          <h2 className="lg:text-left mb-12 font-semibold text-lime-800 text-xl tracking-widest">
             CONTÁCTENOS
           </h2>
           <form className="space-y-4" onSubmit={handleSubmit}>
-            <div className="grid grid-cols-2 gap-4 text-left">
+            <div className="grid lg:grid-cols-2 gap-4 text-left">
               {/* Campo Nombre */}
               <div>
                 <label
@@ -136,7 +136,7 @@ function ContactUs() {
                 className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               ></textarea>
             </div>
-            <div className="text-left">
+            <div className="lg:text-left">
               <button
                 type="submit"
                 className="rounded-lg mt-8 bg-lime-600 p-2 px-12 font-light text-white"
@@ -146,7 +146,7 @@ function ContactUs() {
             </div>
           </form>
         </div>
-        <div>
+        <div className='border-solid border-2 border-zinc-200 rounded-xl p-8'>
           <h2 className="mb-12 font-semibold text-lime-800 text-xl tracking-widest">
             DATOS DE CONTACTO
           </h2>

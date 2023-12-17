@@ -107,7 +107,7 @@ function Hero() {
     <div className="bg-white">
       <div className="relative isolate">
         <div
-          className="grid justify-center items-center bg-blend-multiply bg-no-repeat lg:grid-cols-2"
+          className="px-8 py-4 md:grid justify-center items-center bg-blend-multiply bg-no-repeat lg:grid-cols-2"
           style={{
             background:
               'url(https://darkcyan-caterpillar-298159.hostingersite.com/wp-content/uploads/2023/09/Foto-inicio.png) #246A388C',
@@ -128,7 +128,7 @@ function Hero() {
               Envianos un mensaje
             </a>
           </div>
-          <div className="bg-white m-0 md:m-12 lg:w-4/5 justify-self-center rounded-md py-2 grid lg:py-16">
+          <div className="bg-white m-0 md:m-12 lg:w-4/5 justify-self-center md:rounded-md py-2 grid lg:py-16">
             <h1 className="text-2xl mx-3 md:mx-0 font-light tracking-tight text-lime-800 md:text-3xl">
               Encuentra tu inmueble ideal
             </h1>

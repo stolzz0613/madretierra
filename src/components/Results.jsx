@@ -38,7 +38,7 @@ function Results() {
           >↑ Mayor Precio</p>
         </div>
       </div>
-      <div className="m-6 mt-12 grid grid-cols-4 gap-4">
+      <div className="m-6 mt-12 grid lg:grid-cols-4 gap-2 lg:gap-4">
         {
           state?.properties?.map((p, idx) => {
             return (

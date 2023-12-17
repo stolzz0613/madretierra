@@ -22,7 +22,7 @@ function Slide({ property }) {
       onClick={() => navigate(`/property/${property?.id}`)}
     >
       <h2
-        className="text-sm font-semibold px-4 py-2 mt-5"
+        className="text-sm font-semibold px-4 py-2 mt-5 truncate text-ellipsis"
         style={{ height: '40px' }}
       >{prop?.nombre}</h2>
       <div className="rounded-lg px-4 py-2">

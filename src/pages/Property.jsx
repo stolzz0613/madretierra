@@ -53,14 +53,14 @@ function Property() {
     <div className="m-5 p-5 sm:m-10 sm:p-5 border-solid border-2 border-zinc-200 rounded-lg shadow-xl">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="col-span-1">
-          <div className="text-left text-xl font-semibold mb-8 tracking-widest">
+          <div className="text-left text-sm lg:text-xl font-semibold mb-8 tracking-widest">
             {property?.nombre}
           </div>
           <PropertyCarousel images={images} />
         </div>
         <div className="col-span-1 flex flex-col items-center">
           <div className="text-center">
-            <p className="font-semibold text-lime-800 text-xl tracking-widest">
+            <p className="font-semibold text-lime-800 lg:text-xl tracking-widest">
               DETALLES DEL INMUEBLE
             </p>
           </div>
@@ -147,7 +147,7 @@ function Property() {
                   fontSize: '14px',
                 }}
               />
-              <p>Baños: 2</p>
+              <p>Baños: {property?.banos}</p>
             </div>
             <div className="flex items-center">
               <FontAwesomeIcon
@@ -159,7 +159,7 @@ function Property() {
                   fontSize: '14px',
                 }}
               />
-              <p>Garaje:No</p>
+              <p>{`Garaje: ${property?.garaje ? 'Si' : 'No'}`}</p>
             </div>
             <div className="flex items-center">
               <FontAwesomeIcon
@@ -197,7 +197,7 @@ function Property() {
               />
               <p>Tipo de negocio: {property?.para}</p>
             </div>
-            <div className="text-left mt-12">
+            <div className="lg:text-left mt-12 mb-12 lg:mb-0">
               <p className="text-zinc-600">Precio de renta:</p>
               <div>
                 <p className="text-lg font-semibold">{USDollar.format(property?.precio)}</p>
@@ -208,7 +208,7 @@ function Property() {
         </div>
       </div>
       <div>
-        <p className="text-left font-semibold text-lime-800 text-xl tracking-widest mb-8">
+        <p className="text-left font-semibold text-lime-800 lg:text-xl tracking-widest mb-8">
           DESCRIPCION ADICIONAL
         </p>
         <p className="text-justify text-zinc-700">
@@ -218,13 +218,13 @@ function Property() {
       <div className="mt-12">
         {property?.caracteristicasInternas?.length > 0 && (
           <>
-            <p className="text-left font-semibold text-lime-800 text-xl tracking-widest mb-8">
+            <p className="text-left font-semibold text-lime-800 lg:text-xl tracking-widest mb-8">
               CARACTERISTICAS INTERNAS
             </p>
-            <div className="grid grid-cols-3 gap-2 text-left">
+            <div className="grid grid-cols-3 lg:grid-cols-3 gap-2 lg:text-left">
               {property?.caracteristicasInternas?.map((c) => (
                 <div key={`${id}-${c}`}>
-                  <p className="w-fit rounded-md px-2 p-1 text-zinc-700 bg-lime-700 bg-opacity-25">
+                  <p className="flex justify-center items-center h-full lg:text-base text-xs lg:w-fit rounded-md px-2 p-1 text-zinc-700 bg-lime-700 bg-opacity-25">
                     {c}
                   </p>
                 </div>
@@ -236,13 +236,13 @@ function Property() {
       <div className="my-12">
         {property?.caracteristicasInternas?.length > 0 && (
           <>
-            <p className="text-left font-semibold text-lime-800 text-xl tracking-widest mb-8">
+            <p className="text-left font-semibold text-lime-800 lg:text-xl tracking-widest mb-8">
               CARACTERISTICAS EXTERNAS
             </p>
-            <div className="grid grid-cols-3 gap-2 text-left">
+            <div className="grid grid-cols-3 lg:grid-cols-3 gap-2 lg:text-left">
               {property?.caracteristicasExternas?.map((c) => (
                 <div key={`${id}-${c}`}>
-                  <p className="w-fit rounded-md px-2 p-1 text-zinc-700 bg-lime-700 bg-opacity-25">
+                  <p className="flex justify-center items-center h-full lg:text-base text-xs lg:w-fit rounded-md px-2 p-1 text-zinc-700 bg-lime-700 bg-opacity-25">
                     {c}
                   </p>
                 </div>

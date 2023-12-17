@@ -6,7 +6,7 @@ const Modal = ({ isOpen, setIsOpen }) => {
 
   return isOpen ? (
     <div className="fixed z-10 inset-0 overflow-y-auto">
-      <div className="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <div className="flex items-center justify-center min-h-screen pt-4 lg:px-4 pb-20 text-center sm:block sm:p-0">
         {/* Fondo del modal */}
         <div className="fixed inset-0 transition-opacity" aria-hidden="true">
           <div
@@ -23,11 +23,16 @@ const Modal = ({ isOpen, setIsOpen }) => {
           &#8203;
         </span>
         <div
-          className="p-4 inline-block align-bottom rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle w-3/4"
+          className="p-4 inline-block align-bottom rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle lg:w-3/4"
           style={{ backgroundColor: '#DBE8D8'}}
         >
           {/* Contenido del modal */}
-          <div className="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+          <p
+            onClick={() => setIsOpen(false)}
+            className="cursor-pointer text-2xl font-bold text-lime-800 text-right p-0 m-0">
+            x
+          </p>
+          <div className="px-4 lg:pt-5 pb-4 p-6 sm:pb-4">
             {/* Título y descripción */}
             <div className="sm:flex">
               <div className="mt-3 text-center sm:mt-0 sm:ml-4">
@@ -35,7 +40,7 @@ const Modal = ({ isOpen, setIsOpen }) => {
                   OFERTAR TU INMUEBLE
                 </h2>
                 <div className="my-8">
-                  <p className="text-lg">
+                  <p className="lg:text-lg">
                     Quieres vender, invertir, alquilar y buscas que administren
                     tu propiedad, en Madre Tierra Inmobiliaria &amp;
                     Constructora podrás vas a encontrar asesoría personalizada
@@ -49,9 +54,9 @@ const Modal = ({ isOpen, setIsOpen }) => {
             </div>
 
             {/* Contenido adicional, como la fila con dos cajas */}
-            <div className="mt-5 gap-8 flex">
+            <div className="mt-5 gap-8 flex flex-col lg:flex-row">
                 {/* Primera caja */}
-                <div className="bg-white p-8 shadow-xl rounded-md w-1/2">
+                <div className="bg-white p-2 lg:p-8 shadow-xl rounded-md lg:w-1/2">
                   <h2 className="text-center font-semibold text-lime-800 text-xl tracking-widest">
                     RENTA
                   </h2>
@@ -79,8 +84,8 @@ const Modal = ({ isOpen, setIsOpen }) => {
                     </li>
                   </ul>
                 </div>
-              <div className="w-1/2">
-                <div className="bg-white  p-8 h-full rounded-md shadow-xl">
+              <div className="lg:w-1/2 ">
+                <div className="bg-white p-2 lg:p-8 h-full rounded-md shadow-xl">
                   <div className="rounded-md">
                     <h2 className="text-center font-semibold text-lime-800 text-xl tracking-widest">
                       VENTA
