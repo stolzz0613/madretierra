@@ -193,8 +193,21 @@ function ContactUs() {
           <div className='grid grid-cols-3 mt-8'>
             <p className='text-left col-span-1'>Síguenos:</p>
             <div className='col-span-2'>
-              <FontAwesomeIcon className='mx-12' icon={faInstagram} size='2x'/>
-              <FontAwesomeIcon icon={faFacebook} size='2x'/>
+              <a
+                href="https://www.instagram.com/inmobiliariamadretierra/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className='mx-12'
+              >
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
+              </a>
+              <a
+                href="https://facebook.com/madretierrainmobiliaria"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faFacebook} size="2x" />
+              </a>
             </div>
           </div>
         </div>
