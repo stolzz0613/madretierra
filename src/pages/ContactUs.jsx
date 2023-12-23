@@ -165,7 +165,7 @@ function ContactUs() {
                 color="#38653A"
                 style={{ marginRight: '5px' }}
               />
-              Contacto@madretierra.com
+              inmobiliariamadretierra@gmail.com
             </div>
             <div className="p-1">
               <FontAwesomeIcon

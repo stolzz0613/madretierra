@@ -43,7 +43,7 @@ function Details() {
               color="#38653A"
               style={{ marginRight: '5px' }}
             />
-            Contacto@madretierra.com
+            inmobiliariamadretierra@gmail.com
           </div>
           <div className="col-span-3 text-center mt-4 lg:text-base text-xs justify-self-center">
             <a

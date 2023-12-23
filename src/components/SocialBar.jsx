@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function SocialBar() {
   return (
     <div className="hidden md:flex border-b-solid border-b-2 border-zinc-200 flex justify-end items-center gap-3 text-lime-800 text-sm px-16 py-5 shadow-lg">
-      <a href="mailto:Contacto@madretierra.com">Contacto@madretierra.com</a>
+      <a href="mailto:inmobiliariamadretierra@gmail.com">inmobiliariamadretierra@gmail.com</a>
       <p>
         <a href="tel:3103715943">310 371 5943</a>
         <FontAwesomeIcon
