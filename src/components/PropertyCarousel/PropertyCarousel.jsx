@@ -12,12 +12,19 @@ import './styles.css'
 
 // import required modules
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules'
+import { Lightbox } from 'react-modal-image'
 
 export default function PropertyCarousel({ images }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null)
+  const [showImage, setShowImage] = useState(null)
 
   return (
     <div className='propCarousel'>
+      {showImage && <Lightbox
+        medium={showImage}
+        large={showImage}
+        onClose={() => setShowImage(null)}
+      />}
       <Swiper
         style={{
           '--swiper-navigation-color': '#fff',
@@ -28,6 +35,7 @@ export default function PropertyCarousel({ images }) {
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
+        onTap={e => setShowImage(images?.[e.activeIndex])}
       >
         {images?.map((i) => (
           <SwiperSlide key={i}>

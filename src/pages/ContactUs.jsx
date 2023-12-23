@@ -7,6 +7,8 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 import { Map } from '../components'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -24,8 +26,8 @@ function ContactUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-
-    fetch(
+    const check = formData.nombre == '' || formData.apellido == '' || formData.email == '' || formData.telefono == '' || formData.comentario == ''
+    !check ? fetch(
       'https://darkcyan-caterpillar-298159.hostingersite.com/wp-json/miplugin/v1/enviar-correo',
       {
         method: 'POST',
@@ -35,20 +37,49 @@ function ContactUs() {
         body: JSON.stringify(formData),
       },
     )
-      .then((response) => {
-        // Manejar la respuesta del servidor
-        console.log('Respuesta del servidor:', response)
-        // Aquí podrías mostrar un mensaje de éxito o hacer alguna otra acción
+      .then(() => {
+        toast.success('Formulario Enviado', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
       })
       .catch((error) => {
         // Manejar errores de la solicitud
         console.error('Error al enviar el formulario:', error)
         // Aquí podrías mostrar un mensaje de error o hacer alguna otra acción
       })
+      : toast.error('Llena todos los campos', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
   }
 
   return (
     <div className="container mx-auto lg:py-8">
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <div className="p-8 gap-16 grid grid-cols-1 md:grid-cols-2 gap-8 rounded-lg shadow-xl">
         <div className='border-solid border-2 border-zinc-200 rounded-xl md:border-0 p-8 md:p-0'>
           <h2 className="lg:text-left mb-12 font-semibold text-lime-800 text-xl tracking-widest">
