@@ -87,6 +87,21 @@ export const GET_PROPIEDAD_ID = gql`
           image5 {
             sourceUrl
           }
+          image6 {
+            sourceUrl
+          }
+          image7 {
+            sourceUrl
+          }
+          image8 {
+            sourceUrl
+          }
+          image9 {
+            sourceUrl
+          }
+          image10 {
+            sourceUrl
+          }
         }
       }
     }
