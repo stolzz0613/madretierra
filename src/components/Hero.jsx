@@ -110,7 +110,7 @@ function Hero() {
           className="px-8 py-4 md:grid justify-center items-center bg-blend-multiply bg-no-repeat lg:grid-cols-2"
           style={{
             background:
-              'url(https://darkcyan-caterpillar-298159.hostingersite.com/wp-content/uploads/2023/09/Foto-inicio.png) #246A388C',
+              'url(https://inmobiliariabackend.shop/wp-content/uploads/2023/09/Foto-inicio.png) #246A388C',
             minHeight: '700px',
             backgroundSize: 'cover',
           }}

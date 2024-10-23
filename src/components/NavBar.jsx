@@ -16,7 +16,7 @@ function NavBar() {
           <div onClick={() => navigate('/')} className="cursor-pointer">
             <img
               className="h-20 lg:h-30 w-auto"
-              src="https://darkcyan-caterpillar-298159.hostingersite.com/wp-content/uploads/2023/09/3e7a5dfa-8e23-43ac-85ee-be13d4b3a0a6-1.png"
+              src="https://inmobiliariabackend.shop/wp-content/uploads/2023/09/3e7a5dfa-8e23-43ac-85ee-be13d4b3a0a6-1.png"
               alt=""
             ></img>
           </div>
@@ -91,7 +91,7 @@ function NavBar() {
               <a href="#" className="-m-1.5 p-1.5">
                 <img
                   className="h-8 w-auto"
-                  src="https://darkcyan-caterpillar-298159.hostingersite.com/wp-content/uploads/2023/09/3e7a5dfa-8e23-43ac-85ee-be13d4b3a0a6-1.png"
+                  src="https://inmobiliariabackend.shop/wp-content/uploads/2023/09/3e7a5dfa-8e23-43ac-85ee-be13d4b3a0a6-1.png"
                   alt=""
                 ></img>
               </a>

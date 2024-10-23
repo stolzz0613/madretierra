@@ -2,7 +2,7 @@
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: 'https://darkcyan-caterpillar-298159.hostingersite.com/graphql',
+  uri: 'https://inmobiliariabackend.shop/graphql',
   cache: new InMemoryCache(),
 });
 

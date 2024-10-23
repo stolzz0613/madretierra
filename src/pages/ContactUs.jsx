@@ -28,7 +28,7 @@ function ContactUs() {
     e.preventDefault()
     const check = formData.nombre == '' || formData.apellido == '' || formData.email == '' || formData.telefono == '' || formData.comentario == ''
     !check ? fetch(
-      'https://darkcyan-caterpillar-298159.hostingersite.com/wp-json/miplugin/v1/enviar-correo',
+      'https://inmobiliariabackend.shop/wp-json/miplugin/v1/enviar-correo',
       {
         method: 'POST',
         headers: {

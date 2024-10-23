@@ -10,7 +10,7 @@ function Nosotros() {
         className="flex items-center text-center font-extralight text-white px-8 lg:px-60 lg:text-3xl bg-blend-multiply bg-no-repeat lg:grid-cols-2"
         style={{
           background:
-            'url(https://darkcyan-caterpillar-298159.hostingersite.com/wp-content/uploads/2023/12/image-2.png) rgb(200, 250, 164)',
+            'url(https://inmobiliariabackend.shop/wp-content/uploads/2023/12/image-2.png) rgb(200, 250, 164)',
           minHeight: isMobileDevice() ? '430px' : '630px',
           backgroundSize: 'cover',
           backgroundBlendMode: 'multiply',
@@ -90,7 +90,7 @@ function Nosotros() {
           </p>
         </div>
         <div>
-            <img src="https://darkcyan-caterpillar-298159.hostingersite.com/wp-content/uploads/2023/12/Captura-de-Pantalla-2023-09-12-a-las-3.50.01-p.m-1.png" />
+            <img src="https://inmobiliariabackend.shop/wp-content/uploads/2023/12/Captura-de-Pantalla-2023-09-12-a-las-3.50.01-p.m-1.png" />
         </div>
       </div>
     </div>
